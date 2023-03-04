@@ -1,0 +1,553 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% AGUJournalTemplate.tex: this template file is for articles formatted with LaTeX
+%
+% This file includes commands and instructions
+% given in the order necessary to produce a final output that will
+% satisfy AGU requirements, including customized APA reference formatting.
+%
+% You may copy this file and give it your
+% article name, and enter your text.
+%
+%
+% Step 1: Set the \documentclass
+%
+%
+
+%% To submit your paper:
+\documentclass[draft]{agujournal2019}
+\usepackage{url} %this package should fix any errors with URLs in refs.
+\usepackage{lineno}
+\usepackage[inline]{trackchanges} %for better track changes. finalnew option will compile document with changes incorporated.
+\usepackage{soul}
+\linenumbers
+%%%%%%%
+% As of 2018 we recommend use of the TrackChanges package to mark revisions.
+% The trackchanges package adds five new LaTeX commands:
+%
+%  \note[editor]{The note}
+%  \annote[editor]{Text to annotate}{The note}
+%  \add[editor]{Text to add}
+%  \remove[editor]{Text to remove}
+%  \change[editor]{Text to remove}{Text to add}
+%
+% complete documentation is here: http://trackchanges.sourceforge.net/
+%%%%%%%
+
+%\draftfalse
+
+%% Enter journal name below.
+%% Choose from this list of Journals:
+%
+% JGR: Atmospheres
+% JGR: Biogeosciences
+% JGR: Earth Surface
+% JGR: Oceans
+% JGR: Planets
+% JGR: Solid Earth
+% JGR: Space Physics
+% Global Biogeochemical Cycles
+% Geophysical Research Letters
+% Paleoceanography and Paleoclimatology
+% Radio Science
+% Reviews of Geophysics
+% Tectonics
+% Space Weather
+% Water Resources Research
+% Geochemistry, Geophysics, Geosystems
+% Journal of Advances in Modeling Earth Systems (JAMES)
+% Earth's Future
+% Earth and Space Science
+% Geohealth
+%
+\journalname{Geophysical Research Letters}
+
+\begin{document}
+
+%% ------------------------------------------------------------------------ %%
+%  Title
+%
+% (A title should be specific, informative, and brief. Use
+% abbreviations only if they are defined in the abstract. Titles that
+% start with general keywords then specific terms are optimized in
+% searches)
+%
+%% ------------------------------------------------------------------------ %%
+
+
+
+\title{Surface wind speeds and Enthalpy Fluxes During Tropical Cyclone Formation From Easterly Waves: A CYGNSS view}
+
+
+%% ------------------------------------------------------------------------ %%
+%
+%  AUTHORS AND AFFILIATIONS
+%
+%% ------------------------------------------------------------------------ %%
+
+% Authors are individuals who have significantly contributed to the
+% research and preparation of the article. Group authors are allowed, if
+% each author in the group is separately identified in an appendix.)
+
+% List authors by first name or initial followed by last name and
+% separated by commas. Use \affil{} to number affiliations, and
+% \thanks{} for author notes.
+% Additional author notes should be indicated with \thanks{} (for
+% example, for current addresses).
+
+% Example: \authors{A. B. Author\affil{1}\thanks{Current address, Antartica}, B. C. Author\affil{2,3}, and D. E.
+% Author\affil{3,4}\thanks{Also funded by Monsanto.}}
+
+
+\authors{Anantha Aiyyer\affil{1}  and Carl Schreck\affil{2}}
+
+\affiliation{1}{Department of Marine Earth and Atmospheric Sciences, North Carolina State University, Raleigh, NC USA.}
+
+
+\affiliation{2}{Cooperative Institute for Satellite Earth System Studies (CISESS), North Carolina State University, Asheville, NC}
+
+% \affiliation{1}{First Affiliation}
+% \affiliation{2}{Second Affiliation}
+% \affiliation{3}{Third Affiliation}
+% \affiliation{4}{Fourth Affiliation}
+
+%(repeat as many times as is necessary)
+
+%% Corresponding Author:
+% Corresponding author mailing address and e-mail address:
+
+% (include name and email addresses of the corresponding author.  More
+% than one corresponding author is allowed in this LaTeX file and for
+% publication; but only one corresponding author is allowed in our
+% editorial system.)
+
+% Example: \correspondingauthor{First and Last Name}{email@address.edu}
+
+\correspondingauthor{Anantha Aiyyer}{aaiyyer@ncsu.edu}
+
+%% Keypoints, final entry on title page.
+
+%  List up to three key points (at least one is required)
+%  Key Points summarize the main points and conclusions of the article
+%  Each must be 100 characters or less with no special characters or punctuation and must be complete sentences
+
+% Example:
+% \begin{keypoints}
+% \item	List up to three key points (at least one is required)
+% \item	Key Points summarize the main points and conclusions of the article
+% \item	Each must be 100 characters or less with no special characters or punctuation and must be complete sentences
+% \end{keypoints}
+
+\begin{keypoints}
+\item CYGNSS wind speeds clearly depict the climatological easterly wave stormtrack
+
+\item  A precursor vortex (proto-vortex) is seen in surface wind fields as early as 3 days prior to the tropical cyclone formation.
+
+\item An inward increase of surface enthalpy fluxes within the proto-vortex is seen prior to the tropical cyclone formation. 
+
+
+%This is consistent with a recent modeling study that concluded that such a radial structure of surface enthalpy (i.e., heat) fluxes is important for tropical cyclone formation.
+
+\end{keypoints}
+
+%% ------------------------------------------------------------------------ %%
+%
+%  ABSTRACT and PLAIN LANGUAGE SUMMARY
+%
+% A good Abstract will begin with a short description of the problem
+% being addressed, briefly describe the new data or analyses, then
+% briefly states the main conclusion(s) and how they are supported and
+% uncertainties.
+
+% The Plain Language Summary should be written for a broad audience,
+% including journalists and the science-interested public, that will not have 
+% a background in your field.
+%
+% A Plain Language Summary is required in GRL, JGR: Planets, JGR: Biogeosciences,
+% JGR: Oceans, G-Cubed, Reviews of Geophysics, and JAMES.
+% see http://sharingscience.agu.org/creating-plain-language-summary/)
+%
+%% ------------------------------------------------------------------------ %%
+
+%% \begin{abstract} starts the second page
+
+\begin{abstract}
+We examined the Cyclone Global Navigation Satellite System (CYGNSS) retrievals of surface wind speeds and enthalpy fluxes in African easterly waves that led to the formation of 30 Atlantic tropical cyclones during 2018--2021. Lag composites show a cyclonic proto-vortex as early as 3 days prior to tropical cyclogenesis. The enthalpy flux distribution does not vary substantially before cyclogenesis, but subsequently, there is a marked increase in the extreme upper values. In the composites, a negative radial gradient of enthalpy fluxes becomes apparent 2-3 days before cyclogenesis. These results---based on novel data blending satellite retrievals and global reanalysis---support the findings from recent studies that the spin-up of tropical cyclones is associated with a shift of peak convection towards the vortex core and an inward increase of enthalpy fluxes. 
+\end{abstract}
+
+
+\section*{Plain Language Summary}
+We used data derived from the recently launched Cyclone Global Navigation Satellite System (CYGNSS) to examine the surface wind speeds and heat fluxes during the transition of easterly waves to tropical cyclones in the Atlantic. The CYGNSS wind speeds show a seed vortex 3 days before the formation of the tropical cyclone. The heat fluxes from the ocean to the atmosphere---that fuel the tropical cyclone---are enhanced in the core of the developing vortex as compared to the outer regions. Consistent with past theoretical and observational studies, this arrangement of surface heat fluxes likely contributes to the development of a deep moist column of air that typically precedes tropical cyclogenesis. 
+
+%% ------------------------------------------------------------------------ %%
+%
+%  TEXT
+%
+%% ------------------------------------------------------------------------ %%
+
+\section{Introduction}
+Tropical cyclogenesis typically proceeds from organized precipitating convection within saturated air columns  \cite<e.g.,>{E2018}. In principle, tropical cyclones can emerge spontaneously and no special precursors are necessary \cite<e.g,>{Hakim2011,W2020JAMES}. That notwithstanding, in our current climate, tropical cyclones are  observed to form from mesoscale convection that is typically embedded within a preexisting larger-scale disturbance  \cite{SMA2012}. What elements of spontaneous self-aggregation are active within  preexisting synoptic-scale disturbances in a fully varying background flow? That question remains a subject of active research. Documenting, in detail, the characteristics of tropical cyclone precursors observed in nature is important in that regard. Here we examine surface wind and enthalpy fluxes within African easterly waves (AEWs) while they developed into tropical cyclones over the Atlantic.
+
+\citeA{MZ81} found that developing easterly waves tended to have stronger low-level relative vorticity and weaker environmental vertical wind shear compared to non-developing ones. Subsequent studies have expanded the parameter space to include thermal structure, the vigor of precipitating convection, environmental moisture and convective cloud fraction \cite<e.g.,>{HTT2010,K2013,DAHM2014}.  \citeA{LCP2013} and \citeA{ZZ2014a} suggested that,  while the intensity of convection is not a discriminator of tropical cyclogenesis, developing easterly waves were associated with a greater fractional area of intense convection as compared to non-developing ones. \citeA{FWND2016GRL} and \citeA{Z2020MWR} reported enhanced  intensity and areal coverage of precipitation prior to tropical cyclogenesis. On the other hand, \citeA{WZ2018} reported large variability in the intensity, frequency, and area of deep convection during tropical cyclogenesis. Interestingly, she found one consistent feature---during tropical cyclogenesis, intense convection tended to cluster within the center of the incipient vortex while outside this core region, it remains unchanged or might even weaken.
+
+%\citeA{FWND2016GRL} found enhanced precipitation intensity and areal coverage during 36 hours prior to tropical cyclogenesis, with increasing contribution from stratiform, mid-level and deep convection.  \citeA{Z2020MWR} found that the area covered by precipitation was higher in developing disturbances as compared to non-developing ones. 
+
+The aforementioned studies have utilized a variety of data (e.g., global reanalysis, dropsondes, satellite-derived cloud properties, and precipitation), but have tended to focus on tropospheric parameters. Scant attention has been devoted to the role of surface enthalpy fluxes within the precursor waves prior to tropical cyclogenesis.  Indeed, \citeA{MB2018} noted that, in general, the role of surface enthalpy flux during the spin-up of a tropical cyclone is still being debated. On the other hand, once a tropical cyclone has formed, surface enthalpy fluxes have been shown to be critical for its subsequent intensification \cite{E2018}. One particular instability mechanism ---wind-induced surface heat exchange (WISHE)---relies on positive feedback between surface wind speeds and enthalpy fluxes and is activated once a mesoscale saturated column of air is established \cite{ZE2016}. \citeA{MB2018} attempted to address the role of surface enthalpy fluxes during the initial spin-up of a tropical cyclone (i.e., the tropical depression stage) using idealized simulations. One of their key findings was that a negative radial gradient of surface enthalpy flux is necessary for the genesis of a tropical cyclone from a precursor vortex. 
+
+
+The majority of past investigations of surface fluxes in tropical cyclones have relied on numerical simulations. Few have been able to exploit direct flux observations \cite<e.g.,>{CBH2000M, BME2012}. As these measurements are typically sourced from buoys, field campaigns, and coastal observing stations, they lack the spatial and temporal coverage that is needed for detailed diagnostics. Some studies have used surface fluxes derived from remotely sensed data \cite<e.g.,>{LCCB2011}; but they have tended to focus on the intensification of tropical cyclones. To our knowledge, the published literature has reported no prior study dealing with surface wind speeds and enthalpy fluxes in AEWs undergoing tropical cyclogenesis. 
+
+In this paper, we document the composite structure of surface wind speeds and enthalpy (latent and sensible heat) fluxes associated with developing AEWs. We used data from the recently launched NASA Cyclone Global Navigation Satellite System (CYGNSS) mission which consists of a constellation of low-earth orbiting satellites \cite{2016BAMS}. 
+
+\section{Data}
+
+We used the following data covering July--October 2018-2021. 
+\begin{itemize}
+\item CYGNSS surface wind speeds -- Level 3 Science Data Record (SDR), version 3.1 \cite{2016BAMS}: We use the fully developed seas (FDS) wind speed field that is provided hourly on a $0.2 \times 0.2^o$ grid. We averaged the hourly data to create daily mean fields prior to subsequent processing. \citeA{A2021JAtOT} reported that the  uncertainty in FDS winds speed is less than  2 ms$^{-1}$ when compared with tropical buoy measurements below under 20 ms$^{-1}$. The conclusions drawn from our results are not sensitive to this uncertainty.
+
+\item CYGNSS surface latent and sensible heat flux (Level 2 SDR version 2.0): Details of the flux calculation can be found in \citeA{CPA2019}. Some additional information regarding the CYGNSS data, including an example of surface winds in a typical AEW, is included in the Supplemental material. Recently \citeA{BMRS2020} used this flux product to confirm that wind-induced surface flux feedback helps maintain the Madden Julian Oscillation (MJO). 
+
+\item 10m wind speed and sea level pressure from the ERA5 reanalysis \cite{era5}.
+
+\item Following \citeA{RAWH2017}, to ascertain which Atlantic tropical cyclones developed from AEWs, we use the storm reports prepared by the US National hurricane center (NHC). 
+
+\end{itemize}
+
+
+\section{Results}
+
+
+\subsection{Climatalogical Surface wind speeds Over The Tropical Atlantic}
+
+We first show that the CYGNSS wind speed retrievals are capable of depicting the climatology and synoptic variability of surface wind speeds. The mean and variance of the daily averaged CYGNSS wind speeds along with the climatological ERA5 mean sea level pressure, is presented in Figure \ref{fig:climo}. The mean CYGNSS wind speed field clearly shows the presence of the Atlantic subtropical anticyclone, consistent with the ERA5 sea level pressure contours (Fig. \ref{fig:climo}a). The low-level jet over the Caribbean can also be seen. \citeA{MKDVS97} suggested that this jet  aids in the  amplification of easterly waves crossing into the eastern Pacific. The wind speeds are generally weaker within the main development region (MDR--marked by the rectangle). The low-level westerly monsoon flow is depicted by the enhanced wind speeds near the equatorial eastern Atlantic. On the other hand, the African easterly jet (AEJ) which is typically located around 12$^o$N and peaks in the mid-troposphere, does not appear to extend down to the surface. This can be inferred from the lack of a wind maximum off the coast of west Africa.
+
+Figure \ref{fig:climo}b shows a zonally oriented region of enhanced wind variance within 5$^o$N--15$^o$N, extending from the west coast of Africa to 60$^o$W. This enhanced variance occurs where the mean wind is weak (Fig. \ref{fig:climo}a). The atmospheric variability in the off-equatorial tropical Atlantic is dominated by synoptic-scale waves during July--October \cite<e.g.,>{MTA06}. Thus, we infer that this region of enhanced variance depicts the surface signal of the AEW stormtrack in the CYGNSS wind speeds. Albeit episodic, tropical cyclones will also contribute to the daily wind variance as discussed by \citeA{SMA2012}. Just off the west coast of Africa, around 20$^o$N, a small band of enhanced variance can be noted.  We associate this with the surface reflection of the northern AEW stormtrack that exists poleward of the African easterly jet \cite<e.g.,>{TP01, DA13a}. The northern AEW stormtrack appears to merge with the southern AEW stormtrack between 20$^o$W-30$^o$W. The aforementioned features seen in the variance of CYGNSS wind speeds are consistent with AEW stormtracks seen in 850-hPa synoptic-scale eddy kinetic energy derived from global reanalysis fields \cite<e.g.>{Russell_Aiyyer_2020}. One additional feature is of interest in Fig. \ref{fig:climo} -- over the Caribbean, the enhanced surface wind variance is shifted west of the peak surface wind speed. This downstream shift of eddy activity relative to the low-level Caribbean jet is consistent with the notion that easterly waves may amplify or develop owing to the instability of the background flow in this region \cite{MKDVS97}. 
+
+\subsection{Composite Wind Structures During Tropical Cyclogenesis}
+We now consider the evolution of surface wind speeds during the time of tropical cyclogenesis from AEWs. A total of 30 tropical cyclones were deemed to originate from AEWs within the MDR during the study period. The genesis locations of these storms are shown in Fig. S2. To document the surface wind evolution, we calculated storm-relative composites as follows. We shifted the data grids such that all storms shown in Figure S2 are co-located at a reference point (10$^o$N; 40$^o$W) on the day of tropical cyclogenesis (Day-0). For lag composites, we moved the date forward and backward relative to the date of cyclogenesis while retaining the same spatial shift. Although there may be considerable storm-to-storm variability, such compositing techniques elucidate the features that are most likely to occur in a synoptic phenomenon \cite{WZ2018}.
+
+The composite CYGNSS (FDS) speeds and 10-m ERA5 velocity vectors are shown in the left panel of Fig. \ref{fig:comp}. The right panel shows the same fields but as anomalies relative to a background mean that was calculated by averaging over 13 days centered on Day-0.  The statistical significance of each wind component was evaluated by comparing it against 1000 composites, each created by randomly drawing dates over July--October, 2018–2021. A two-tailed significance was evaluated at the 95\% confidence level with the following null hypothesis: The composite average could have resulted from a random draw. For a vector in the composite field to be deemed statistically significant (shown by bold arrows), either its zonal or the meridional component must be significant.  For visualization, we show all vectors because, as seen in Fig. \ref{fig:comp}, they represent a physically continuous and meaningful representation of the composite wave evolution.
+
+
+Figure \ref{fig:comp} shows that there is a close correspondence between the structure of the CYGNSS retrievals and ERA5 near-surface wind speeds. An incipient surface vortex (marked by the filled square) is beginning to appear on Day-4, and becomes more coherent on Day-3. The proto-vortex associated with the composite AEW moves westward and continues to amplify. In part, this increased coherence is expected simply as a result of the compositing method as we get closer to Day-0. Nevertheless, it shows that a surface-based vortex with closed circulation is in place at least 3 days prior to the tropical depression stage. This is consistent with the notion of a proto-vortex embedded within a synoptic scale wave pouch  visualized in a wave-following reference frame  \cite<e.g.,>{DMW09}. Interestingly, the composite surface vortex is visible here even in the earth-relative frame.
+
+ The leading and trailing anticyclonic anomalies straddling the main vortex can also be seen, particularly in the anomaly fields (Fig. \ref{fig:comp}b). Despite the minimal data filtering employed here--in the form of removing the 13-day mean---these features clearly highlight the AEW wavepacket in the surface wind fields, consistent with those seen in 2-10 day filtered fields at 850 hPa \cite<e.g.,>{DA13a}.
+
+\section{Surface Enthalpy fluxes within AEWs}
+Figure \ref{fig:vplot_fds} illustrates the distribution of latent and sensible heat fluxes as a function of time relative to tropical cyclogenesis using data from all 30 AEWs considered in this study. For each day, we extracted all available flux values for each wave within a radial distance of 700 km from the center of the tracked composite vortex (see fig. \ref{fig:comp}). The extent of this region is roughly half the canonical AEW wavelength \cite<e.g.,>{DA15} and encompasses the cyclonic circulation of the wave. The overall interpretation of our subsequent findings is not sensitive to the size of this bounding region as long as it includes the bulk of the AEW trough.
+
+Figure \ref{fig:vplot_fds}a shows an expansion of the upper extremes of the latent heat flux distribution over time. The 99$^{th}$ and 95$^{th}$ percentile values of the latent heat flux increase by 36\% and 11\%, respectively, from Day-3 to Day +3. These increases occur subsequent to tropical cyclogenesis. On the other hand, their mean and median values barely change - increasing, respectively by only by 5\% and 3\% . On average, the sensible heat flux (\ref{fig:vplot_fds}b) is about 10 times smaller than the latent heat flux. From Day-3 to Day+3, the 99$^{th}$ and 95$^{th}$ percentile values of the sensible heat flux increase, respectively,  by 16\% and 8\%. On the other hand, the mean and median of the sensible heat flux decrease by roughly 12\% and 22\% respectively. From Fig. \ref{fig:vplot_fds}, it can be noted that this decrease occurs mostly after the tropical depression has formed. 
+
+The increase in the upper extremes of the enthalpy fluxes is unsurprising since peak surface wind speeds increase after tropical cyclogenesis. However, the key result from Fig. \ref{fig:vplot_fds} is that the mean surface enthalpy fluxes do not change substantially during the 3 days prior to tropical cyclogenesis. Rather, they increase after the formation of the tropical depression, likely reflecting its subsequent intensification into a tropical cyclone.  Thus, the intensity of surface enthalpy fluxes within the AEW may not be a particularly good predictor of imminent cyclogenesis. On the other hand, the robust expansion of the upper extremes ($>90^{th}$ percentile) of their distributions suggests that localized sharp increases in surface fluxes accompany tropical cyclogenesis and its further intensification. 
+
+We now examine whether there is a discernible change in the radial structure of the surface enthalpy fluxes in the developing vortex. For each day relative to cyclogenesis, we binned all available flux data (for all 30 AEWs) based on the distance from the center of the vortex tracked in Fig. \ref{fig:comp}. 
+The bar-and-whisker plot (Fig. \ref{fig:flux_rad_comp}) show the mean and 
+95\% confidence interval for each 50 km wide bin.  The results were qualitatively similar when we used other reasonable values for the bin width ranging from 20--70 km. In addition to the bin averages, the orange line in Fig. \ref{fig:flux_rad_comp} shows the locally weighted scatterplot smoothing (LOWESS) regression curve calculated with all un-binned data. As described by \citeA{CD2012}, LOWESS offers a non-parametric technique to explore the data and estimate regression surfaces that can yield useful physical insight. The LOWESS curve was calculated using the python package seaborn \cite{Waskom2021}.
+ 
+
+Fig. \ref{fig:flux_rad_comp} shows that the area-averaged latent heat flux is nearly radially uniform three days prior to the formation of the tropical depression. On the other hand, there is already an inward increase  (i.e., negative radial gradient) in the sensible heat flux. Closer to cyclogenesis (Day-2 and Day-1), a negative radial gradient of latent heat flux is also established. As expected, due to the way the flux data are aggregated based on the composite vortex center, the gradient is strongest on Day-0. But despite the differences in the subsequent track and motion of the 30 developing tropical cyclones, the composite negative radial gradient is still evident on  Day+1 and Day+2. \citeA{WZ2018} showed that, during the time leading up to cyclogenesis, intense convection appears to move towards the center of the proto-vortex. She also found that, in the outer parts of the proto-vortex, the intensity of convection is unchanged or even reduced. The increase of surface enthalpy fluxes within the vortex core from Day-2 (Fig. \ref{fig:flux_rad_comp}) is consistent with the observed inward concentration of convection \cite{WZ2018}, and provides additional empirical support to the modeling work of \citeA{MB2018}. 
+
+Some features seen in Fig. \ref{fig:flux_rad_comp} need additional scrutiny. That the negative radial gradient of the sensible heat flux is established earlier than the latent heat flux is an intriguing result.  It also appears that the area-mean sensible heat flux is diminished by Day+2 as compared to earlier days. Are these robust features or artifacts of our sample size?  The reason is unclear from our analysis and high-resolution numerical simulations with interactive air-sea coupling may shed more light. 
+
+
+\section{Discussion}
+The establishment of a saturated column of air is a critical step toward cyclogenesis because evaporation-driven downdrafts are reduced and the environment becomes conducive for deep convection, setting the stage for the WISHE process \cite{E2018}. \citeA{MVC2004JAS} described two stages of hurricane development: A pre-WISHE stage, wherein the radial profile of near-surface equivalent potential temperature ($\theta_e$), a measure of moist entropy, was nearly radially uniform; and a WISHE stage with a single dominant surface vortex with a moist core and marked inward increase  (i.e., a negative gradient) of $\theta_e$, consistent with the steady-state model of \citeA{S2003QJRMS}. As noted by \citeA{MB2018}, axisymmetric models of tropical cyclogenesis require a negative gradient of column relative humidity \cite<e.g.,>{Emanuel1997JAS, Frisius2006, S2003QJRMS}. On the basis of their idealized numerical simulations, \citeA{MB2018} argued that an inward increase in surface enthalpy fluxes is one possible pathway to get a persistent saturated core within a precursor vortex.  This motivated us to examine  the evolution of surface latent and sensible heat fluxes within AEWs leading to tropical cyclogenesis. We summarize our results for two periods:
+
+\begin{itemize}
+    \item \emph{Prior to tropical depression formation}: There is only a modest increase in the CYGNSS-derived surface latent heat flux during the period leading to the depression stage of tropical cyclogenesis (Fig. \ref{fig:vplot_fds}).  Since we did not compare developing and non-developing AEWs, we cannot ascertain whether the developing waves were associated with some minimal threshold of surface fluxes to maintain the precursor vortex or AEW. However, it appears - at least from the aggregate view -- that a rapid increase in the average surface latent heat fluxes is not a necessary step for cyclogenesis; rather it occurs after the depression has formed.  In our composites, surface latent heat flux is   nearly radially uniform three days prior to the formation of the composite tropical depression. Following  \citeA{MVC2004JAS}, this would correspond to the pre-WISHE stage of tropical cyclone development. 
+    
+    Interestingly, during the two days leading to cyclogenesis, a clear negative radial gradient of surface enthalpy fluxes is established. This suggests a spatial reorganization of surface fluxes -- and by extension, intense moist convection -- that favors a shift towards the core of the developing vortex. This is consistent with the findings of \citeA{WZ2018}.  This inward increase of surface enthalpy fluxes likely sets the stage for tropical cyclogenesis, and is consistent with the model simulations of tropical cyclone spin-up from a proto-vortex described by \citeA{MB2018}. 
+
+    \item \emph{Post tropical depression formation}: There is a widening of the enthalpy flux distribution towards higher values within the developing vortex (Fig. \ref{fig:vplot_fds}). Particularly, the upper extreme of the latent heat flux distribution increases substantially a day after the depression has formed. As noted by \cite{WZ2018}, the  migration of convection towards the core of the developing vortex is the key feature of tropical cyclogenesis. Importantly, and related to the  migration of deep convection, a clear inward increase of surface enthalpy fluxes becomes a persistent feature (Fig. \ref{fig:flux_rad_comp}).  Following the arguments of  \citeA{MB2018} and \citeA{MVC2004JAS}, the rapid increase in the latent heat flux and its negative  radial gradient in the  intensifying vortex indicates that the WISHE mechanism is now fully active.
+\end{itemize}
+
+There are a few caveats to consider in relation to the data and method used here. The surface enthalpy fluxes are dependent on the fidelity of ERA5's surface thermodynamic fields and incur the attendant errors and biases. Additionally, we did not track the precursor AEWs, and instead used lag-composites to visualize the evolution of the fields. An alternative method would be to track the waves, which introduces other uncertainties stemming from multiple vorticity centers, splits, and mergers. We favor our current method 
+for the ease of reproducibility. The coherence of the composite fields at different times (Fig. \ref{fig:comp}) gives us confidence that the wave-to-wave variability in tracks does not impact our conclusions.
+
+
+\section{Conclusions}
+
+The CYGNSS retrievals capture the climatological spatial structure of surface wind speeds as well as the synoptic-scale AEW stormtrack over the tropical Atlantic. Lag-composites of CYGNSS and ERA5 data show an AEW wavepacket and an attendant low-level cyclonic vortex as early as 3 days prior to tropical cyclogenesis. The distribution of surface enthalpy fluxes within the proto-vortex does not change substantially before the formation of the tropical depression. Subsequently, the distribution widens, indicating amplified fluxes. In our composites, a clear negative radial gradient of enthalpy fluxes is established at least 2 days prior to tropical cyclogenesis. These results are consistent with observations of convection in developing tropical cyclones \cite<e.g.,>{WZ2018}. They also  provide empirical support to a recent modeling study that found that an inward increase of surface enthalpy fluxes is important for the spin-up of tropical cyclones \cite{MB2018}.
+
+%
+
+
+%Text here ===>>>
+
+
+%%
+
+%  Numbered lines in equations:
+%  To add line numbers to lines in equations,
+%  \begin{linenomath*}
+%  \begin{equation}
+%  \end{equation}
+%  \end{linenomath*}
+
+
+
+%% Enter Figures and Tables near as possible to where they are first mentioned:
+%
+% DO NOT USE \psfrag or \subfigure commands.
+%
+% Figure captions go below the figure.
+% Table titles go above tables;  other caption information
+%  should be placed in last line of the table, using
+% \multicolumn2l{$^a$ This is a table note.}
+%
+%----------------
+% EXAMPLE FIGURES
+%
+% \begin{figure}
+% \includegraphics{example.png}
+% \caption{caption}
+% \end{figure}
+%
+% Giving latex a width will help it to scale the figure properly. A simple trick is to use \textwidth. Try this if large figures run off the side of the page.
+% \begin{figure}
+% \noindent\includegraphics[width=\textwidth]{anothersample.png}
+%\caption{caption}
+%\label{pngfiguresample}
+%\end{figure}
+%
+%
+% If you get an error about an unknown bounding box, try specifying the width and height of the figure with the natwidth and natheight options. This is common when trying to add a PDF figure without pdflatex.
+% \begin{figure}
+% \noindent\includegraphics[natwidth=800px,natheight=600px]{samplefigure.pdf}
+%\caption{caption}
+%\label{pdffiguresample}
+%\end{figure}
+%
+%
+% PDFLatex does not seem to be able to process EPS figures. You may want to try the epstopdf package.
+%
+
+%
+% ---------------
+% EXAMPLE TABLE
+%
+% \begin{table}
+% \caption{Time of the Transition Between Phase 1 and Phase 2$^{a}$}
+% \centering
+% \begin{tabular}{l c}
+% \hline
+%  Run  & Time (min)  \\
+% \hline
+%   $l1$  & 260   \\
+%   $l2$  & 300   \\
+%   $l3$  & 340   \\
+%   $h1$  & 270   \\
+%   $h2$  & 250   \\
+%   $h3$  & 380   \\
+%   $r1$  & 370   \\
+%   $r2$  & 390   \\
+% \hline
+% \multicolumn{2}{l}{$^{a}$Footnote text here.}
+% \end{tabular}
+% \end{table}
+
+%% SIDEWAYS FIGURE and TABLE
+% AGU prefers the use of {sidewaystable} over {landscapetable} as it causes fewer problems.
+%
+%\begin{sidewaysfigure}
+% \includegraphics[width=20pc]{figs/climo.png}
+% \caption{caption here}
+% \label{newfig}
+%\end{sidewaysfigure}
+
+\section{Open Research}
+The CYGNSS wind and surface enthalpy fluxes are available at, respectively, \url{https://doi.org/10.5067/CYGNS-L3X31} and  \url{https://doi.org/10.5067/CYGNS-L2H20}. The ERA5 fields are available at  \url{https://cds.climate.copernicus.eu/cdsapp#!/dataset/reanalysis-era5-single-levels}. The IBTRACS database of tropical cyclone tracks is archived at \url{https://doi.org/10.25921/82ty-9e16}. Software packages matplotlib \cite{Hunter:2007}, seaborn \cite{Waskom2021}, and NCAR Command Language (Version 6.6.2) were used for data visualization.
+
+
+\acknowledgments
+We thank the reviewers for their constructive comments that helped improve the manuscript. We thank Juan Crespo for the CYGNSS heat flux data. This work was supported by NASA through awards NNX17AH61G and 80NSSC22K0610.
+
+
+\newpage
+
+
+\begin{figure}
+ \includegraphics[width=.97\textwidth]{climo.png}
+ \caption{Shaded fields showing (a) mean ($ms^{-1}$); and   Variance ($m^{2}s^{-2}$)  of daily averaged CYGNSS FDS wind speed over July-October 2018--2021. The contours on both panels show the long-term (1980-2018) average of mean sea level pressure from ERA5. The magenta rectangle marks the main development region (5N--20N; 80W--17W).}
+ \label{fig:climo}
+\end{figure}
+
+%
+\begin{figure}
+\centering{
+ \includegraphics[width=25pc]{ERA_L3_comp.png}
+ }
+ \caption{Storm centered lag composite mean (left panels) and anomalies (Right panels) of CYGNSS FDS wind speeds (ms$^{-1}$;  shaded) and ERA5 10 m wind vectors (ms$^{-1})$. The star symbol marks the center of the composite storm at the first recorded depression stage corresponding to Day 0. The black square shows the incipient vortex within the composite AEW, and the hurricane symbol marks the location of the composite tropical storm after it has formed.}
+ \label{fig:comp}
+
+AS\end{figure}
+
+
+\begin{figure}
+ \includegraphics[width=.97\textwidth]{v_plot_fds.png}
+ \caption{Distribution of (a) latent; and (b) sensible heat fluxes (Wm$^{-2}$) within a radial distance of 700 km from the composite vortex center (see Fig. \ref{fig:comp}) at different days relative to tropical cyclogenesis. The blue solid line marks the mean of the distributions. The rest of the solid lines depict, from bottom to top, the following percentiles of the distribution: P$_5$, P$_{10}$,P$_{50}$ (median), P$_{90}$, P$_{95}$, and P$_{99}$.}
+ \label{fig:vplot_fds}
+\end{figure}
+
+
+\begin{figure}
+ \includegraphics[width=.97\textwidth]{fluxes_radius_fds.png}
+ \caption{Latent (top panels) and sensible (bottom panels) heat fluxes (Wm$^{-2}$) as a function of distance (km) from the vortex center at different days relative to tropical cyclogenesis. The fluxes were binned at 50 km radial increments. The bars show the  mean flux for each bin and its 95\% confidence interval. The orange line shows the non parametric LOWESS regression fit that was calculated using un-binned data}
+ \label{fig:flux_rad_comp}
+\end{figure}
+
+
+
+%  \begin{sidewaystable}
+%  \caption{Caption here}
+% \label{tab:signif_gap_clos}
+%  \begin{tabular}{ccc}
+% one&two&three\\
+% four&five&six
+%  \end{tabular}
+%  \end{sidewaystable}
+
+%% If using numbered lines, please surround equations with \begin{linenomath*}...\end{linenomath*}
+%\begin{linenomath*}
+%\begin{equation}
+%y|{f} \sim g(m, \sigma),
+%\end{equation}
+%\end{linenomath*}
+
+%%% End of body of article
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Optional Appendix goes here
+%
+% The \appendix command resets counters and redefines section heads
+%
+% After typing \appendix
+%
+%\section{Here Is Appendix Title}
+% will show
+% A: Here Is Appendix Title
+%
+%\appendix
+%\section{Here is a sample appendix}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Optional Glossary, Notation or Acronym section goes here:
+%
+%%%%%%%%%%%%%%
+% Glossary is only allowed in Reviews of Geophysics
+%  \begin{glossary}
+%  \term{Term}
+%   Term Definition here
+%  \term{Term}
+%   Term Definition here
+%  \term{Term}
+%   Term Definition here
+%  \end{glossary}
+
+%
+%%%%%%%%%%%%%%
+% Acronyms
+%   \begin{acronyms}
+%   \acro{Acronym}
+%   Definition here
+%   \acro{EMOS}
+%   Ensemble model output statistics
+%   \acro{ECMWF}
+%   Centre for Medium-Range Weather Forecasts
+%   \end{acronyms}
+
+%
+%%%%%%%%%%%%%%
+% Notation
+%   \begin{notation}
+%   \notation{$a+b$} Notation Definition here
+%   \notation{$e=mc^2$}
+%   Equation in German-born physicist Albert Einstein's theory of special
+%  relativity that showed that the increased relativistic mass ($m$) of a
+%  body comes from the energy of motion of the body—that is, its kinetic
+%  energy ($E$)—divided by the speed of light squared ($c^2$).
+%   \end{notation}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%  ACKNOWLEDGMENTS
+%
+% The acknowledgments must list:
+%
+% >>>>	A statement that indicates to the reader where the data
+% 	supporting the conclusions can be obtained (for example, in the
+% 	references, tables, supporting information, and other databases).
+%
+% 	All funding sources related to this work from all authors
+%
+% 	Any real or perceived financial conflicts of interests for any
+%	author
+%
+% 	Other affiliations for any author that may be perceived as
+% 	having a conflict of interest with respect to the results of this
+% 	paper.
+%
+%
+% It is also the appropriate place to thank colleagues and other contributors.
+% AGU does not normally allow dedications.
+
+
+%% ------------------------------------------------------------------------ %%
+%% References and Citations
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% \bibliography{<name of your .bib file>} don't specify the file extension
+%
+% don't specify bibliographystyle
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\clearpage
+\bibliography{aiyyer_references}
+
+
+
+
+%Reference citation instructions and examples:
+%
+% Please use ONLY \cite and \citeA for reference citations.
+% \cite for parenthetical references
+% ...as shown in recent studies (Simpson et al., 2019)
+% \citeA for in-text citations
+% ...Simpson et al. (2019) have shown...
+%
+%
+%...as shown by \citeA{jskilby}.
+%...as shown by \citeA{lewin76}, \citeA{carson86}, \citeA{bartoldy02}, and \citeA{rinaldi03}.
+%...has been shown \cite{jskilbye}.
+%...has been shown \cite{lewin76,carson86,bartoldy02,rinaldi03}.
+%... \cite <i.e.>[]{lewin76,carson86,bartoldy02,rinaldi03}.
+%...has been shown by \cite <e.g.,>[and others]{lewin76}.
+%
+% apacite uses < > for prenotes and [ ] for postnotes
+% DO NOT use other cite commands (e.g., \citet, \citep, \citeyear, \nocite, \citealp, etc.).
+%
+
+
+
+\end{document}
+
+
+
+
+
+
+
+The CYGNSS mission employs ocean surface reflectometry and has several advantages over other surface wind retrieval platforms such as scatterometers. This technique is less sensitive to attenuation and scattering within heavy rainfall regions and the data are available at high spatial and temporal resolution \cite{BR2020}. Importantly, the CYGNSS data provide high spatial and temporal resolution that allows for a detailed description of surface conditions over the ocean.  The technical details of the CYGNSS wind retrieval process can be found in \cite{2016BAMS}.
+
+The CYGNSS Level 2 SDR surface latent and sensible heat fluxes are derived using the Coupled Ocean-Atmosphere Response Experiment (COARE version 3.5) flux algorithm, which is based on  the bulk aerodynamic formula \cite{E2013JPO, CPA2019}. Recent studies that have used this product include \citeA{BMRS2020} who confirmed that wind-induced surface flux feedback helps maintain the Madden Julian Oscillation (MJO). 
+
+
+As described in  \cite{2019BAMS}, two categories of CYGNSS wind speeds and surface fluxes are available:  One, referred to as the fully developed seas (FDS), assumes that the sea state is in equilibrium with the surface wind speeds; and the second, referred to as the young-seas limited fetch wind speeds (YSLF), assumes that the long-wave portion of the sea state has not responded fully to the local surface wind speeds. The latter is a relatively more robust estimate of high wind speeds typical of hurricanes \cite{2019BAMS}. Since our focus is on AEWs transitioning to tropical cyclones, and we restricted our attention to a couple of days post-tropical depression, we only present calculations  using FDS wind speeds. However, when we duplicated the calculations using YSLF wind speeds, our interpretations and conclusions were qualitatively unchanged (not shown).  The uncertainty associated with CYGNSS wind retrievals is continuing to be assessed and reported in the literature \cite<e.g.,>{2019BAMS}.  For speeds less than 20 ms$^{-1}$, the uncertainty in the  CYGNSS FDS wind speed was found to be less than 2 ms$^{-1}$ when compared with tropical buoy measurements \cite{A2021JAtOT}. The conclusions drawn from our results are not sensitive to this uncertainty.
+
+
+
+Figure S1 illustrates the typical CYGNSS wind fields associated with an AEW. It shows the daily averaged Level 3 FDS wind speeds and 10m ERA5 wind vectors during the six days leading to the genesis of hurricane Grace in 2021. The vector wind speeds clearly depict a wave train over the Atlantic and the specific wave trough that eventually resulted in cyclogenesis.

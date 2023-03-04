@@ -1,0 +1,205 @@
+\documentclass[10pt, letterpaper]{article}
+\usepackage{graphicx}
+\usepackage{xcolor, hyperref}
+\usepackage{tcolorbox}
+
+\begin{document}
+
+\noindent {\Large {\bf Response to Reviews}}
+
+\section*{Changes Made to the Manuscript}
+
+We are grateful for the comments made by the reviewer. The following changes have been made to the manuscript:
+
+\begin{enumerate}
+    \item Changes in response to reviewer comments. Please see itemized list under point-by-point response
+
+    \item A new sub-section (under Data and Methods) to clearly describe the composite and aggregation technique used.
+
+\end{enumerate}
+
+\vspace{.25in}
+
+\section*{Point-by-point response to comments}
+
+
+\section{Reviewer 1}
+
+\textcolor{purple}{The authors have addressed all my concerns, so I recommend publication after the authors satisfy the other reviewers' comments.} \\
+
+{\emph{Response}: Thank you for your time and your constructive comments that helped improve the manuscript}
+
+
+\vspace{.25in}
+
+
+%=========================================================================================
+%=========================================================================================
+%=========================================================================================
+
+\section{Reviewer 3}
+
+
+\textcolor{purple}{This is my first time reviewing this paper. This study examines the spatial patterns and temporal evolutions of surface wind speeds and surface enthalpy fluxes in African easterly waves (AEWs) that develop into tropical cyclones (TCs) using retrievals from CYGNSS. Despite our understanding that surface enthalpy fluxes are essential to TC development, an examination of such fluxes in AEWs that lead to TC genesis has been lacking, so this paper is a welcome contribution to the literature. It is great to see an observational analysis that examines and finds evidence for processes (like a negative radial gradient of surface enthalpy fluxes prior to cyclogenesis) that have been found in theoretical and modeling studies. The authors generally do a good job placing their results in the context of prior modeling studies. It seems like the CYGNSS dataset is a great resource for examining the TC genesis process, though the surface flux retrievals themselves are subject to the usual uncertainties of needing to rely on reanalysis data for the surface temperature and humidity fields.}\\
+
+
+\noindent \emph{Response}: We are grateful for the careful review of the paper. Thank you for your time.
+
+
+\vspace{.25in}
+
+
+\noindent {\bf General Comments}\\
+
+
+\textcolor{purple}{1. I'm confused about the composite methodology and tracking. Lines 287-288 discusses the limitations of the method, noting that you do not track the precursor AEWs. But line 212-213 mentioned that you binned all the flux data based on the distance from the center of the vortex tracked in Figure 2, and line 185-186 said that you extracted all available flux values for each wave within a radial distance of 700 km from the center of the tracked composite vortex. So I'm not sure what is tracked and what is not, and how the storm-relative compositing differs between the analysis presented in Section 3 and that presented in Section 4. Perhaps I am missing something obvious, but it might be confusing to other readers also so some clarification is needed. Along the same lines, line 225-226 notes that based on the way the flux day are aggregated based on the composite vortex center, the gradient is strongest on Day-0. Why wouldn't it be able to strengthen after Day-0? Is the tracking not continued?} \\
+
+
+{\emph{Response}: Thank you for flagging this. We agree that the method could be better described. In the revised manuscript, we have included a separate subsection under the Data and Method section that
+describes the compositing and tracking method. The gradient is strongest on Day-0 is because we do not track individual waves as described below. Rather, we track the composite wave. As a result, there will be a slight dispersion of the signal away from Day-0 which accounts for the reduction in the amplitude. The emphasis here is on the radial distribution of the enthalpy fluxes. That clearly shows the negative radial gradient found in model simulations.  The new subsection is copied below. \\
+
+
+\begin{tcolorbox}[sharp corners, colframe=white]
+\subsection{Composites, Tracking, and Aggregation}
+
+We used the storm-relative composite averages and aggregation technique employed in numerous past studies (e.g., Williams and Gray, 1973, and many others since). A total of 30 tropical cyclones were deemed to originate from AEWs within the Atlantic main development region (Fig. S2 and  Fig. \ref{fig:climo}). For each case, we denoted the day of tropical cyclogenesis as Day-0.  We shifted the data grids such that all storms shown in Fig. S2 are co-located at a reference point (10$^o$N; 40$^o$W) on Day-0. This is accomplished by a shift in the latitude-longitude co-coordinates ($d \theta_i, d \lambda_i$) for each storm: i=[1,30]. The temporal evolution is then captured by lags relative to Day-0. For this, we moved the date forward and backward relative to the date of cyclogenesis while retaining the same spatial shift.  Using this storm-relative data set for each developing tropical cyclone, we synthesized the data in the following ways:
+\end{tcolorbox}
+
+\newpage
+\begin{tcolorbox}[sharp corners, colframe=white]
+
+\begin{itemize}
+    \item Storm-relative composites of ERA5 and CYGNSS winds (see section 3): We averaged the data for all 30 cases for each temporal lag. This yields time-lagged composite fields that can be interpreted as the evolution of a prototype AEW. Since both ERA5 and the Level 3 CYGNSS wind data are available on uniform grids, our composites are also on a uniform grid with the developing AEW at the center of the grid.
+
+    \item AEW Tracking and Storm-relative aggregation of Surface enthalpy fluxes (See section 4): As discussed subsequently in section 3, the composite surface winds show a coherent cyclonic proto-vortex within the developing AEWs. We tracked the center of this vortex in the composite fields and assigned those positions as the AEW centers. It should be noted that we did not track the individual AEWs in time. Rather, we used the composite AEW to estimate the position of the individual waves. In keeping with the spirit of the lag-composite technique, each member in the composite AEW is assumed to have roughly the same propagation track and speed. This can also be justified based on the coherence of the proto-vortex signal in the composites. Although there may be some case-to-case variability, such a storm-centered compositing technique elucidates the common features that are most likely to occur in a synoptic phenomenon (e.g., Russell and Aiyyer; Wang 2018; Aiyyer 2015). After determining the wave centers, we aggregated the Level 2 surface flux data in two different ways: First, for each day, we collected all available fluxes within a fixed distance from the center of the AEWs. This describes the temporal evolution of the surface fluxes anywhere inside the proto-vortex during the formation of the tropical cyclone. Second, for each day, we binned the fluxes from all AEWs based on the distance from the vortex center. This describes the radial distribution of the fluxes for different days during tropical cyclogenesis.
+    
+
+\end{itemize}
+\end{tcolorbox}
+
+\vspace{.25in}
+
+
+\textcolor{purple}{2. You might also consider referencing and comparing your results to Brian Tang's work on coupled dynamic-thermodynamic forcings during tropical cyclogenesis in your introduction and discussion (Tang et al. 2017). When applying his diagnostic framework to axisymmetric model experiments, he finds that surface moist entropy fluxes are needed for genesis to occur but they don't directly increase the radial entropy gradient before genesis; they do so only after genesis.} \\
+
+
+
+{\emph{Response}: Thank you for this reference. We found it to be very relevant to our paper. We have now included citations to both Tang(2017a) and Tang(2017b) in the introduction (lines 73--84) and in the discussion section.
+
+\vspace{.25in}
+
+\noindent {\bf Specific Comments} \\
+
+\textcolor{purple}{1. Line 39-40: Wing et al. 2016 and Carstens and Wing 2020 would be better references here than Wing et al. 2020, since they discuss spontaneous TC genesis.} \\
+
+{\emph{Response}: Agreed. Done
+
+
+\vspace{.25in}
+\textcolor{purple}{2. Line 63: What precipitation data are you referring to? If you mean satellite-derived cloud properties and precipitation, then remove the common.}\\
+
+{\emph{Response}: Yes. Done
+
+
+\vspace{.25in}
+\textcolor{purple}{3. Line 105: Perhaps indicate that you retrieve 10m wind speed and direction from ERA5, since the latter is displayed in Figure 2?} \\
+
+{\emph{Response}: Agreed. That information is in a subsequent bullet point.
+
+\vspace{.25in}
+
+\textcolor{purple}{4. Line 122-123: Can you provide a citation for the typical location of the African easterly jet?} \\
+
+
+{\emph{Response}: We have added a citation to Parker et al. (2005).\\
+
+Parker, D.J., Thorncroft, C.D., Burton, R.R. and Diongue-Niang, A. (2005), Analysis of the African 
+easterly jet, using aircraft observations from the 
+JET2000 experiment. Q.J.R. Meteorol. Soc., 131: 
+1461-1482.
+
+\vspace{.25in}
+
+\textcolor{purple}{
+5. Line 129-130: Could the enhanced variance also be due to variation in the structure and position of the ITCZ?} \\
+
+{\emph{Response}: Yes that is possible. The ITCZ does move meridionally and there may be contributions from equatorial waves as well. However, northward of $10^o$ N, the dominant contributor to variability (as seen in winds and precipitation fields) is from easterly waves. Some of the ITCZ fluctuation is mediated by these waves (See also for example: Mekonnen et al., 2006).\\
+
+Mekonnen, A., Thorncroft, C. D., & Aiyyer, A. R. (2006). Analysis of Convection and Its Association with African Easterly Waves, Journal of Climate, 19(20), 5405-5421.
+
+
+
+
+\vspace{.25in}
+
+\textcolor{purple}{
+6. Line 152: What do you mean exactly by "retaining the same spatial shift"? Is the domain shifting with time as you move the date relative to cyclogenesis? Or do you define the domain relative to cyclogenesis, and the keep that domain fixed in real space even as you consider prior or later times?}\\
+
+
+{\emph{Response}: Thanks for asking this question. Yes, the latter. The domain is fixed in real space. On Day-0, the center of the domain corresponds to the co-loction point of all storms (at the time of genesis). To do this, we shift the grids by a certain lat-lon pair ($d \theta_i, d \lambda_i$) for each storm. Here i goes from 1 to 30. This spatial shift is then also applied to the lag-times. This is now clarified in the method subsection.
+
+
+
+
+\vspace{.25in}
+
+\textcolor{purple}{7. Line 167-168: How is the incipient vortex indicated in the composite in Figure 2 identified and tracked?}\\
+
+{\emph{Response}: To locate the center of the vortex, we used the Okubo-Weiss parameter to mark areas dominated rotation, and then visually adjusted the center to match the center of the circulation. This has been added on line 225 of the revised manuscript.
+
+
+\vspace{.25in}
+
+\textcolor{purple}{8. Line 235: It looks also like the latent heat flux radial gradient might diminish slightly after cyclogenesis. Why might that be?}\\
+
+
+{\emph{Response}: The very slight dip in the latent heat flux (seen in the 99th percentile value) is likely due to the sampling method (we are coarsening the data to daily samples) and very small compared to the ramp-up a day after. 
+
+\vspace{.25in}
+
+
+
+\textcolor{purple}{9. Line 298: When I first read this, I thought you were referring to the spatial distribution of surface fluxes within the proto-vortex, which DOES vary as the time to cyclogenesis approaches. But I'm not sure how to reword it to make the distinction clear.} \\
+
+
+{\emph{Response}: This line has been slightly reworded to help make that distinction. The new line number is 342.\\
+
+\begin{tcolorbox}[sharp corners, colframe=white]
+The bulk distribution of surface enthalpy fluxes within the proto-vortex does not change substantially from day to day before the formation of the tropical depression. 
+\end{tcolorbox}
+
+\vspace{.25in}
+
+\textcolor{purple}{
+10. Figure 4: I know the information is in the caption, but adding axis labels would help in viewing this figure.} \\
+
+{\emph{Response}: Thanks for the suggestion. We tried it. In the text, initially, we did not refer to the panels by the labels. Rather by the lags (that appear on the titles).  When we tried referring to panel numbers, it added clutter to the text without being helpful! So, we kept the figure and its description as is. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\end{document}
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,16 @@
+May 5
+
+Replaced vorticity by OW parameter to locate the vortex center. After subjective analysis settled on the following for the paper:
+
+Up to Day 0 (the TC genesis day), OW parameter is used to locate the vortex center. Matches the visual location of the vortex well.
+
+After Day 0, I use the center of the circulation (visually) to locate the composite TC center. The OW parameter is slightly off from the visually located center. I judge that the visually determined center is a better fit after TC genesis.
+
+As of May 5, the centers are:
+
+  aewCenLat=  (/  0.,  0.,   4.75,  6.0,  7.25 ,8.75,10,11.5,12,14,15.75, 0., 0./)
+  aewCenLon=  (/180., 180., -24.,   -25.5, -31.75,-37.25,-40.25, -45.5, -51.75, -56, -59.25,180.,180./)
+
+
+
+===========================================

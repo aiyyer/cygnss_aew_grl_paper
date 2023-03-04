@@ -1,0 +1,5 @@
+climo/ has code to calculate cygnss mean and variance for fig. 1
+era/   has code to calculate the long-term mean MSLP from era5 for fig. 1
+
+plots/ has all ncl code to plot the figures 1,
+
